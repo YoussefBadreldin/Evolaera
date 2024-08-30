@@ -394,6 +394,19 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var myModal = document.getElementById('portfolioModal2');
+      var video = myModal.querySelector('video');
+  
+      myModal.addEventListener('hidden.bs.modal', function () {
+        // Pause the video when the modal is hidden
+        video.pause();
+        video.currentTime = 0; // Optional: reset video to the beginning
+      });
+    });
+  </script>
+  
 </body>
 
 </html>

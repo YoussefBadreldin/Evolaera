@@ -1385,3 +1385,17 @@ section {
     color: #333;
   }
 
+  .modal-body {
+    position: relative; /* Allows absolute positioning of the video */
+  }
+  
+  .modal-body video.img-fluid {
+    display: block; /* Ensure the video behaves like a block element */
+    margin: 0 auto; /* Center the video horizontally */
+    max-width: 100%;
+    max-height: 70vh; /* Adjust this value as needed */
+    width: auto;
+    height: auto;
+  }
+  
+  
