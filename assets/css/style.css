@@ -1346,8 +1346,8 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the circle */
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: #f0f0f0;
     border-radius: 50%;
     display: flex;
@@ -1370,13 +1370,13 @@ section {
 
   .see-more-circle span {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 1000;
   }
 
   /* Link styling */
   .see-more-link {
     text-decoration: none;
-    color: black;
+    color: #37517e;
   }
 
   /* Link hover effect */
