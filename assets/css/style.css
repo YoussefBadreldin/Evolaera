@@ -1303,3 +1303,85 @@ section {
     display: flex;
     justify-content: center;
   }
+
+  #footer {
+    text-align: center;
+  }
+
+  .container.footer-bottom {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Transparent square container */
+  .portfolio-square {
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    position: relative;
+    background-color: transparent; /* Transparent background */
+  }
+
+  /* Centering the content inside the square */
+  .portfolio-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Image styling */
+  .portfolio-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  /* Styling the See More circle and centering it */
+  .see-more-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the circle */
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* See More text and icon styling */
+  .see-more-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .see-more-circle i {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+
+  .see-more-circle span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  /* Link styling */
+  .see-more-link {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* Link hover effect */
+  .see-more-link:hover {
+    text-decoration: none;
+    color: #333;
+  }
+
