@@ -628,22 +628,15 @@
   <!-- Contact Section -->
   <section id="contact" class="section">
     <div class="container mx-auto px-6">
-      <h2 class="section-title">Start Your 3D Journey</h2>
-      <p class="section-subtitle">Ready to transform your brand with immersive 3D experiences?</p>
+             <h2 class="section-title">Start Elevating Your Brand</h2>
+       <p class="section-subtitle">Ready to evolve your brand with immersive 3D experiences?</p>
       
       <div class="contact-form">
-        <form id="contact-form">
-          <div class="form-group">
-            <input type="text" class="form-input" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" class="form-input" placeholder="Your Email" required>
-          </div>
-          <div class="form-group">
-            <textarea class="form-input" rows="5" placeholder="Tell us about your project" required></textarea>
-          </div>
-          <button type="submit" class="submit-btn">Start Your 3D Journey</button>
-        </form>
+        <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/evolaera/meeting?hide_gdpr_banner=1"
+          style="min-width:320px;height:600px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Calendly inline widget end -->
       </div>
     </div>
   </section>
@@ -817,12 +810,7 @@
       });
     });
 
-    // Form submission
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      // Add your form submission logic here
-      alert('Thank you for your message! We\'ll get back to you soon.');
-    });
+
 
     // Mobile menu toggle
     document.getElementById('mobile-menu-btn').addEventListener('click', function() {
