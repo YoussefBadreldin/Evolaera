@@ -598,25 +598,25 @@
        animation: fadeInUp 1.5s ease-out 1s forwards;
      }
 
-     .scroll-indicator {
-       position: absolute;
-       bottom: 2rem;
-       left: 50%;
-       transform: translateX(-50%);
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       color: var(--text-secondary);
-       opacity: 0;
-       animation: fadeIn 2s ease-out 2s forwards;
-     }
+           .scroll-indicator {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--text-secondary);
+        opacity: 0;
+        animation: fadeIn 2s ease-out 3s forwards;
+      }
 
      .scroll-arrow {
        width: 2px;
        height: 30px;
        background: var(--neon-blue);
        position: relative;
-       margin-bottom: 0.5rem;
+       margin-top: 0.5rem;
        animation: bounce 2s infinite;
      }
 
@@ -729,7 +729,7 @@
            <a href="#about" class="nav-link">About</a>
            <a href="#services" class="nav-link">Services</a>
            <a href="#why-us" class="nav-link">Why Us</a>
-           <a href="#contact" class="nav-link">Contact</a>
+           <a href="#getstarted" class="nav-link">Get Started</a>
          </div>
         <div class="md:hidden">
           <button class="text-white" id="mobile-menu-btn">
@@ -759,10 +759,11 @@
           <h1 class="intro-title">Welcome to Evolaera</h1>
           <p class="intro-subtitle">Where 3D meets reality</p>
         </div>
-        <div class="scroll-indicator">
-          <div class="scroll-arrow"></div>
-          <span>Scroll to explore</span>
-        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll to explore</span>
+        <div class="scroll-arrow"></div>
+      </div>
       </div>
     </div>
   </section>
