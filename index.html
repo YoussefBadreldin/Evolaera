@@ -131,10 +131,13 @@
      /* Mobile Menu Styles */
      .mobile-menu {
        transition: all 0.3s ease;
+       opacity: 0;
+       visibility: hidden;
      }
 
      .mobile-menu.show {
-       display: block !important;
+       opacity: 1;
+       visibility: visible;
      }
 
      .mobile-nav-link {
@@ -775,7 +778,7 @@
          </div>
          
          <!-- Mobile Menu -->
-         <div class="mobile-menu hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-95 z-50">
+         <div class="mobile-menu fixed top-16 md:top-18 left-0 w-full h-full bg-black bg-opacity-95 z-50">
            <div class="flex justify-end p-6">
              <button class="text-white text-2xl" id="close-menu-btn">
                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -939,7 +942,7 @@
   <!-- Contact Section -->
   <section id="contact" class="section">
     <div class="container mx-auto px-6">
-             <h2 class="section-title">Start Elevating Your Brand</h2>
+             <h2 class="section-title">Start Evolving Your Brand</h2>
        <p class="section-subtitle">Ready to evolve your brand with immersive 3D experiences?</p>
       
       <div class="contact-form">
@@ -1130,14 +1133,12 @@
      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
      mobileMenuBtn.addEventListener('click', function() {
-       mobileMenu.classList.remove('hidden');
        mobileMenu.classList.add('show');
        document.body.style.overflow = 'hidden'; // Prevent background scrolling
      });
 
      closeMenuBtn.addEventListener('click', function() {
        mobileMenu.classList.remove('show');
-       mobileMenu.classList.add('hidden');
        document.body.style.overflow = ''; // Restore scrolling
      });
 
@@ -1145,7 +1146,6 @@
      mobileNavLinks.forEach(link => {
        link.addEventListener('click', function() {
          mobileMenu.classList.remove('show');
-         mobileMenu.classList.add('hidden');
          document.body.style.overflow = '';
        });
      });
@@ -1154,7 +1154,6 @@
      mobileMenu.addEventListener('click', function(e) {
        if (e.target === mobileMenu) {
          mobileMenu.classList.remove('show');
-         mobileMenu.classList.add('hidden');
          document.body.style.overflow = '';
        }
      });
